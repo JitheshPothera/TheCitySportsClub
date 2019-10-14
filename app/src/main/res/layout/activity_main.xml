@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pageTitle"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:id="@+id/clubName"
+            android:text="The City Sports Club"
+            android:layout_alignTop="@id/sportsGroundImage"
+            android:layout_centerHorizontal="true"
+            android:textSize="48sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:fontFamily="sans-serif-medium"
+            android:background="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/sports"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sportsGroundImage"
+        android:src="@drawable/sportsground"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/pageTitle"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join us for an afternoon of learning how to play the fun and exciting game of  football."
+        android:layout_below="@id/pageTitle"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:id="@+id/clubIntroduction" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The City Sports Club will teach you for FREE!"
+        android:layout_below="@id/clubIntroduction"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:id="@+id/gameFeeDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gameFeeDescription"
+        android:id="@+id/whenToPlay"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="When: "
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Saturdays 3:00PM - 5:00PM"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/whenToPlay"
+        android:id="@+id/whereToPlay"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Where:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="City Sports Ground Complex, Melbourne CBD, VIC - 3000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sportsGroundImage"
+        android:id="@+id/contactDetails"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneDetails"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Phone:"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="(03) 987 654 321"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0d0560" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailDetails"
+            android:paddingLeft="8dp"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/phoneDetails">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Email:"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="citysports@club.au"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0d0560"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
